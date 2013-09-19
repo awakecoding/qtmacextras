@@ -11,6 +11,9 @@ mac {
 
         LIBS *= -framework UIKit
     } else {
+
+	QMAKE_CXXFLAGS += -mmacosx-version-min=10.6
+
         PUBLIC_HEADERS += \
             $$PWD/qmaccocoaviewcontainer.h \
             $$PWD/qmacnativetoolbar.h \
